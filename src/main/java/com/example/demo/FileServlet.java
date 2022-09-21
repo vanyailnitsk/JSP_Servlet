@@ -1,6 +1,8 @@
 package com.example.demo;
 
 import java.io.*;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
@@ -12,9 +14,8 @@ public class FileServlet extends HttpServlet {
         message = "Oops...Nothing here";
     }
 
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        PrintWriter pw = response.getWriter();
-        
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+
     }
 
     public void destroy() {
